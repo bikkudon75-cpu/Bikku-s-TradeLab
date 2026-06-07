@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bikku's TradeLab Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="login">
+  <div class="card">
+    <h1>🚀 Bikku's TradeLab</h1>
+    <p>Enter your trader identity</p>
+    <input id="name" placeholder="Your Name">
+    <button onclick="start()">Enter Market</button>
+  </div>
+</div>
+
+<div id="app">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div>👤 <span id="user"></span></div>
+    <div>💰 <span id="balance"></span></div>
+    <div>🪙 CRYPT: <span id="crypt"></span></div>
+    <div>⭐ XP: <span id="xp"></span></div>
+    <div>🏆 Lv <span id="level"></span></div>
+  </div>
+
+  <!-- XP BAR -->
+  <div class="bar">
+    <div id="xpBar"></div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="grid">
+
+    <div class="card chart">
+      📈 LIVE MARKET (Simulation)
+      <div id="chart">Price Loading...</div>
+    </div>
+
+    <div class="card">
+      🎯 Daily Mission
+      <p id="mission"></p>
+      <div class="progress"><div id="missionBar"></div></div>
+    </div>
+
+    <div class="card funded">
+      🏆 Funded Challenge
+      <button onclick="toggleFunded()">Enter</button>
+      <p id="fundedStatus"></p>
+      <div class="progress"><div id="fundBar"></div></div>
+    </div>
+
+    <div class="card">
+      🎰 Spin Reward
+      <button onclick="spin()">SPIN</button>
+    </div>
+
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+    <button class="buy" onclick="trade(1)">BUY</button>
+    <button class="sell" onclick="trade(0)">SELL</button>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="card full">
+    📊 Trade History
+    <div id="history"></div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
