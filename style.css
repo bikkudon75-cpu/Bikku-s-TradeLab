@@ -1,0 +1,91 @@
+body {
+  margin:0;
+  font-family: Arial;
+  background: #0b1220;
+  color:white;
+}
+
+/* LOGIN */
+#login {
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding:20px;
+  margin:10px;
+  border-radius:15px;
+  backdrop-filter: blur(10px);
+  box-shadow:0 0 20px rgba(0,255,150,0.2);
+}
+
+/* TOP BAR */
+.topbar {
+  display:flex;
+  justify-content:space-around;
+  padding:10px;
+  background:#111827;
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+  padding:10px;
+}
+
+/* CHART */
+.chart {
+  grid-column: span 2;
+}
+
+#chart {
+  height:200px;
+  background:#0f172a;
+  margin-top:10px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* BUTTONS */
+.actions {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:10px;
+}
+
+button {
+  padding:10px 20px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.buy { background:#22c55e; }
+.sell { background:#ef4444; }
+
+/* PROGRESS */
+.progress {
+  background:#1f2937;
+  height:10px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.progress div {
+  height:100%;
+  background:#22c55e;
+  width:0%;
+}
+
+/* FULL CARD */
+.full {
+  margin:10px;
+}
